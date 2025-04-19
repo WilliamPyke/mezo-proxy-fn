@@ -15,7 +15,7 @@ exports.handler = async function(event, context) {
   }
 
   // Proxy the request to your HTTP RPC node
-  const response = await fetch('[http://35.208.243.34](http://35.208.243.34):8545', {
+  const response = await fetch('http://35.208.243.34:8545', {
     method: event.httpMethod,
     headers: event.headers,
     body: event.body
